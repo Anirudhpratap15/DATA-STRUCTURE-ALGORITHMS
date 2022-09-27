@@ -1,12 +1,40 @@
-An array store multiple items of the same type together -HOMOGENEOUS
- collection of items stored at contiguous memory locations. 
- Array is index based starting from 0th index eg - 0,1,2,....n-1    
+*ARRAY
+  An array store multiple items of the same type together -HOMOGENEOUS
+  collection of items stored at contiguous memory locations. 
+  Array is index based starting from 0th index eg - 0,1,2,....n-1    
  
- DECLARING ARRAY WITH LENGTH  -  int a[] = new int[5];   have 5 index but no value 
- INITIALIZING ARRAY   -   int[] arr = {1, 2, 4, 5, 6};  have 5 values with 5 index 
+  DECLARING ARRAY WITH LENGTH  -  int a[] = new int[5];   have 5 index but no value 
+  INITIALIZING ARRAY   -   int[] arr = {1, 2, 4, 5, 6};  have 5 values with 5 index 
  
- MUTABLE - CHANGE
- ARRAY IS MUTABLE IN JAVA 
+  MUTABLE - CHANGE
+  ARRAY IS MUTABLE IN JAVA 
+ 
+*2D ARRAY -  array of array {
+                            {},
+                            {},
+                            {}
+                            }
+
+row - horizontal 
+col - vertical
+int a[][] = new int[row][col];  we can define only row also .
+
+- each nested array is a different object  ,so can be of different size .   eg  
+      int arr[][] =       {
+                            {1,2,3,4,5},
+                            {7,8,9},
+                            {99}
+                          }
+                            
+0th index - {1,2,3,4,5},    eg- arr[0]
+1th index - {7,8,9},        eg- arr[1]
+2nd index - {99}            eg- arr[2]
+
+
+NOTES Array.length gives number of rows eg arr.length() = 3 
+
+
+
  
  
  
