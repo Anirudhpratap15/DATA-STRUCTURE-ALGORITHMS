@@ -1,0 +1,12 @@
+An array store multiple items of the same type together -HOMOGENEOUS
+ collection of items stored at contiguous memory locations. 
+ Array is index based starting from 0th index eg - 0,1,2,....n-1    
+ 
+ DECLARING ARRAY WITH LENGTH  -  int a[] = new int[5];   have 5 index but no value 
+ INITIALIZING ARRAY   -   int[] arr = {1, 2, 4, 5, 6};  have 5 values with 5 index 
+ 
+ MUTABLE - CHANGE
+ ARRAY IS MUTABLE IN JAVA 
+ 
+ 
+ 
