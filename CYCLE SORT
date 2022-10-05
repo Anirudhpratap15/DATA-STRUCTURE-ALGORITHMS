@@ -1,0 +1,30 @@
+In-place sorting algo -  Algorithm that does not need an extra space
+Unstable - order is not maintain 
+
+* Cycle sort is an in-place sorting Algorithm and  unstable 
+
+   when element are given in range eg- 1 to n      ,  n = 5 ,
+1) so the correct position for sorted element is  num-1  as index is started from 0  eg 0-4   when n= 5 .
+   so the sorted arrays is      {1,2,3,4,5}
+index-                       {0,1,2,3,4} 
+
+eg- {3,5,2,1,4}
+Algo - 
+1 ) starting from 0th index check oth index element is at correct position if not then swap with correct index position 
+              {3,5,2,1,4}   here 3  is not at correct index  should be on 2nd index    why ?  index = num-1  see point 1)
+  
+  after swap {2,5,3,1,4}  now swap 2 with 5         pass 1
+              {5,2,3,1,4}  now swap 5 with 4        pass 2
+              {4,2,3,1,5} now swap 4 with 1         pass 3
+              {1,2,3,4,5}                           pass 4
+
+2)  swap until get right element at each index then move next index 
+
+
+complexity - there is 4 pass and n is 5 
+    (n-1) swap needed  at worst case 
+    this is worst case
+    
+    n+(n-1) = 2n+1  
+    ignoring constant 
+    complexity = (n)
