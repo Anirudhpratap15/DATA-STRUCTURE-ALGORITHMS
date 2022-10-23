@@ -1,0 +1,23 @@
+String: It is a sequence of characters. In java, objects of String are immutable which means a constant and cannot be changed once created.
+
+
+ //String are  immuatable(cannot be changed)
+        String a = "anirudh" ;
+        String b = new String(a);
+
+        //equal method check only char are same in string or not
+        if(a.equals(b)){
+            System.out.println("equals method");
+            System.out.println("String is equals");                // output
+        }
+        else {
+            System.out.println("not equals");
+        }
+// (==) compartor checks ref variable is pointing to the same object or not
+        if(a==b){
+            System.out.println(" == equals compartor method");
+            System.out.println("String is equals");
+        }
+        else {
+            System.out.println("not equals");             // output
+        }
